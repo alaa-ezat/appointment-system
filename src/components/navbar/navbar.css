@@ -1,0 +1,102 @@
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1001;
+  }
+  
+  .logo h2 {
+    margin: 0;
+    color: aquamarine;
+    font-size: 34px; 
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-links a {
+    color: aquamarine;
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 22px; 
+  }
+  
+  .nav-links a:hover {
+    background-color: #ecf0f1; 
+    color: #333; 
+  }
+  
+  /* Media queries for screens larger than 768px */
+  @media (min-width: 769px) {
+    .topnav {
+      padding: 20px 50px;
+    }
+  
+    .logo h2 {
+      font-size: 40px;
+    }
+  
+    .nav-links a {
+      padding: 14px 20px; 
+    }
+  }
+  
+  /* Media queries for screens up to 480px */
+  @media (max-width: 480px) {
+    .topnav {
+      padding: 10px;
+    }
+  
+    .logo h2 {
+      font-size: 28px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .nav-links a {
+      padding: 10px 16px;
+      font-size: 18px;
+    }
+  }
+  
+  /* Media queries for screens between 769px and 1400px */
+  @media (min-width: 769px) and (max-width: 1030px) {
+    .topnav {
+      width: 80%;
+      justify-content: space-between; 
+      align-items: center;
+    }
+  
+    .logo h2 {
+      font-size: 26px;
+    }
+  
+    .nav-links {
+      display: flex; 
+      margin-top: 0; 
+    }
+  
+    .nav-links a {
+      padding: 14px 12px; 
+    }
+  }
+  /* Media queries for screens between 1024px and 1400px */
+  @media (min-width: 1031px) and (max-width: 1400px) {
+    .topnav {
+      width: 70%;
+      justify-content: space-between; 
+      align-items: center;
+    }
+    .nav-links a {
+      padding: 14px 50px; 
+    }
+  }

@@ -1,0 +1,61 @@
+.date-selection-container h2 {
+    color: #333;
+  }
+  
+  .date-selection-label {
+    display: block;
+    margin-top: 20px;
+  }
+  
+  .date-selection-input {
+    width: 70%;
+    max-width: 300px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 25px auto;
+  }
+  
+  /* Styles for screens larger than 1023px */
+  @media (min-width: 1024px) {
+    .date-selection-container {
+      width: 60%;
+      margin: 0 auto;
+    }
+  
+    .date-selection-input {
+      width: 70%;
+      max-width: 300px; 
+      margin: 25px auto; 
+    }
+  }
+  
+  /* Styles for screens between 768px and 1023px */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .date-selection-container {
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    .date-selection-input {
+      width: 80%; 
+      max-width: 250px;
+      margin: 20px auto; 
+    }
+  }
+  
+  /* Styles for screens up to 767px */
+  @media (max-width: 767px) {
+    .date-selection-container {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .date-selection-input {
+      width: 90%; 
+      max-width: 200px;
+      margin: 15px auto; 
+    }
+  }
+  
